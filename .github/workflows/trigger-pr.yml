@@ -1,0 +1,33 @@
+name: Trigger Pull Request
+
+on:
+  push:
+    tags:
+    - 'iter**'
+
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    
+    # Required permissions to write code and open PRs
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make changes to files
+        run: |
+          echo "Automated change entry" >> updates.txt
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: automated updates"
+          title: "Automated Content Updates"
+          body: "This PR was automatically created by a GitHub Actions workflow."
+          branch: "develop"         # The branch created for the PR
+          base: "main"              # The branch you want to merge into
