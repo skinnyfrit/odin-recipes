@@ -1,6 +1,6 @@
 <!-- Set up your README.md file and write a brief introduction describing what the current project is and what skills you will have demonstrated once you have completed it. (You can also do this as a self-reflection at the end of the project, which is a good way to review what you have learned.) -->
 # TOP Recipe collection
-[![GitHub Project](https://shields.io/badge/github-project-blue?logo=github)](https://github.com/users/skinnyfrit/projects/1/views/3)
+<div align="center">[![GitHub Project](https://shields.io/badge/github-project-blue?logo=github)](https://github.com/users/skinnyfrit/projects/1/views/3)</div>
 
 The Odin Project: Foundation for frontend development
 
