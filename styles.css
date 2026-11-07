@@ -23,7 +23,6 @@ header {
     display: flex;
     flex-direction: row;
     background: #1F2937;
-    align-items: center;
     justify-content: center;
 }
 
@@ -40,6 +39,7 @@ ul.links {
     display: flex;
     flex-direction: row;
     justify-content:left;
+    align-items: center;
     white-space: nowrap;
 }
 
@@ -47,7 +47,7 @@ li {
     color: #F9FAF8;
     width:fit-content;
     height: 12px;
-    padding-right: 5%;
+    padding-right: 7%;
 }
 
 /* Hero section 1 */
@@ -82,8 +82,8 @@ img.long {
 button.signup {
     background: #65a4e0;
     color: white;
-    font-size: 36px;
-    font-weight: 900;
+    padding: 5px 20px;
+    border-radius: 10px;
 }
 
 /* Hero section 2 */
