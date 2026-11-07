@@ -6,19 +6,32 @@ p, ul.links {
     color: #1F2937;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
 /* Header */
 header {
     display: flex;
     flex-direction: row;
     background: #1F2937;
-    align-content: center;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo {
     color: #F9FAF8;
     font-size: 24px;
-    padding-left: 10px;
+    font-weight: bolder;
+    white-space: nowrap;
 }
 
 ul.links {
@@ -27,11 +40,14 @@ ul.links {
     display: flex;
     flex-direction: row;
     justify-content:left;
+    white-space: nowrap;
 }
 
 li {
     color: #F9FAF8;
-    padding-right: 10px;
+    width:fit-content;
+    height: 12px;
+    padding-right: 5%;
 }
 
 /* Hero section 1 */
