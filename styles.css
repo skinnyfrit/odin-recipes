@@ -38,16 +38,16 @@ ul.links {
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    justify-content:left;
+    justify-content: right;
     align-items: center;
-    white-space: nowrap;
+    width: fit-content;
 }
 
 li {
     color: #F9FAF8;
     width:fit-content;
-    height: 12px;
-    padding-right: 7%;
+    white-space: nowrap;
+    padding-left: 7%;
 }
 
 /* Hero section 1 */
