@@ -294,3 +294,16 @@ div.recipe-how {
     width: fit-content;
     white-space: normal;
 }
+
+.recipe-top > .container.vert > .long {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+}
+
+img.long {
+    object-fit: cover;
+    object-position: center;
+}
