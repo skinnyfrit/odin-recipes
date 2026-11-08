@@ -45,10 +45,13 @@ ul.links {
 }
 
 li {
-    color: #F9FAF8;
     width:fit-content;
     white-space: nowrap;
     padding-left: 7%;
+}
+
+li > p > a {
+    color: #F9FAF8;
 }
 
 /* Hero section 1 */
@@ -73,9 +76,17 @@ p.hero-subtext {
     margin: 5px;
 }
 
-img.long {
+.long {
     height: 250px;
-    width: auto;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #65a4e0;
+}
+
+.long > p {
+    color: #F9FAF8;
 }
 
 button.signup {
