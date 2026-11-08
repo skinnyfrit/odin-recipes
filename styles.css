@@ -51,6 +51,7 @@ li {
 }
 
 li > p > a {
+    text-decoration: none;
     color: #F9FAF8;
 }
 
@@ -112,6 +113,7 @@ div.hero-2 {
 .fit {
     width: 100%;
     justify-content: center;
+    align-items: flex-start;    
 }
 
 .info-box {
@@ -121,21 +123,18 @@ div.hero-2 {
     padding: 0px 15px;
 }
 
+.info-box > .horizont {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+}
+
 p#info-heading {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
     text-align: center;
-}
-
-.info-links {
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: right;
-    align-items: center;
-    width: fit-content; */
+    margin: 20px 0px;
 }
 
 .square {
@@ -153,11 +152,14 @@ img.square {
     object-position: center;
 }
 
-p > a {
-    display: flex;
-    align-items: end;
+.horizont > p {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.horizont > p > a {
     text-decoration: none;
-    text-align: right;
+    margin: 10px 0px 0px 0px;
 }
 
 /* Quote section */
