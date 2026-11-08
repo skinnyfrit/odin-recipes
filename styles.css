@@ -149,6 +149,26 @@ p > a {
     text-align: right;
 }
 
+/* Quote section */
+div.quote-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #E5E7EB;
+    padding: 90px 0px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+.source {
+    text-align: right;
+    font-weight: 300;
+}
+
 /* Footer section */
 footer {
     display: flex;
@@ -162,4 +182,4 @@ footer {
 
 .middle {
     justify-content: center;
-}
+ 
