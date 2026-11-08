@@ -2,56 +2,97 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Recipe Collection</title>
+        <title>Recipe: Lasagna</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
     </head>
-    <style>
-        .credits {
-            font-size: small;
-        }
-    </style>
-
     <body>
-        <a href="../index.html">Return home</a>
-        <h1>Lasagna</h1>
-        <img src="../resources/joe-boshra-lasagna.jpg">
-        <p class="credits">(Photo by <a href="https://unsplash.com/@joestudios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">joe boshra</a> on <a href="https://unsplash.com/photos/a-delicious-slice-of-lasagna-with-melted-cheese-JNCxXU3A0H0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash)</a></p>
-        <div class="desc">
-            <h2>Description</h2>
-            <p>
-                A deliciously layered Italian dish and a favourite of one of my beloved childhood character's.
-                <br> How hard could layering pasta, meat and cheese be? Well, let's find out in this recipe!
-            </p>
-            <h2>Ingredients</h2>
-            <ul>
-                <li>Lasagna pasta sheet</li>
-                <li>Can of pureed tomatoes</li>
-                <li>Basil</li>
-                <li>Minced beef</li>
-                <li>Parmigiano reggiano (Parmesan)</li>
-                <li>Mozzarella cheese</li>
-                <li>Garlic</li>
-                <li>Salt</li>
-            </ul>
-            <h2>Steps</h2>
-            <ol>
-                <li>Gather your ingredients.</li>
-                <li>Stir fry the garlic until golden brown.</li>
-                <li>Add the minced beef until browned.</li>
-                <li>Stir in the pureed tomatoes.</li>
-                <li>Bring a pot of lightly salted water to boil.</li>
-                <li>Cook lasagna sheets till al dente, following packaging instructions (if any).</li>
-                <li>Preheat oven.</li>
-                <li>
-                    To assemble, spread a layer of meat sauce over the bottom of a baking dish.
-                    Then, layer a sheet of lasagne over the sauce, ensuring they overlap slightly when covering the sauce.
-                    Finally, cover the lasagna sheet with mozzarella and grated parmesan.
-                </li>
-                <li>Repeat the layering step until sufficiently filled, or once ingredients are used up. Top the final layer with more cheese.</li>
-                <li>Cover the baking dish with aluminum foil and send that bad boy to the oven for 25 minutes.</li>
-                <li>Remove the foil, then bake for another 25 minutes.</li>
-                <li>Let the lasagna rest before cutting it.</li>
-            </ol>
+        <header>
+            <div class="container">
+                <p id="logo">Recipes</p>
+                <ul class="links">
+                    <li><p><a href="https://github.com/skinnyfrit/odin-recipes/">Visit repo!</a></p></li>
+                    <li><p><a href="https://github.com/skinnyfrit/">GitHub Profile</a></p></li>
+                    <li><p><a href="https://skinnyfrit.github.io/">Portfolio</a></p></li>
+                </ul>
+            </div>
+        </header>
+            <div class="return-home">
+                <div class="container">
+                    <p><a href="../index.html"><< Return home</a></p>
+                </div>
+            </div>
+
+        <div class="recipe-top"> 
+            <div class="container vert">
+                <p class="hero-main">Lasagna</p>
+                <!-- <div class="long"> -->
+                <img class="long" src="../resources/joe-boshra-lasagna.jpg">
+                <!-- </div> -->
+                <p class="hero-subtext credits">(Photo by <a href="https://unsplash.com/@joestudios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">joe boshra</a> on <a href="https://unsplash.com/photos/a-delicious-slice-of-lasagna-with-melted-cheese-JNCxXU3A0H0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash)</a></p>
+                <div class="desc">
+                    <p id="info-heading">Description</p>
+                    <p class="hero-subtext">
+                        A deliciously layered Italian dish and a favourite of one of my beloved childhood character's.
+                        <br> How hard could layering pasta, meat and cheese be? Well, let's find out in this recipe!
+                    </p>
+                </div>
+            </div>
         </div>
+
+        <div class="recipe-how">
+            <div class="container vert">
+                <div class="ing">
+                    <p id="info-heading">Ingredients</p>
+                    <ul class="recipe-listing">
+                        <li>Lasagna pasta sheet</li>
+                        <li>Can of pureed tomatoes</li>
+                        <li>Basil</li>
+                        <li>Minced beef</li>
+                        <li>Parmigiano reggiano (Parmesan)</li>
+                        <li>Mozzarella cheese</li>
+                        <li>Garlic</li>
+                        <li>Salt</li>
+                    </ul>
+                </div>
+                <div class="steps">
+                    <p id="info-heading">Steps</p>
+                    <ol class="recipe-listing">
+                        <li>Gather your ingredients.</li>
+                        <li>Stir fry the garlic until golden brown.</li>
+                        <li>Add the minced beef until browned.</li>
+                        <li>Stir in the pureed tomatoes.</li>
+                        <li>Bring a pot of lightly salted water to boil.</li>
+                        <li>Cook lasagna sheets till al dente, following packaging instructions (if any).</li>
+                        <li>Preheat oven.</li>
+                        <li>
+                            To assemble, spread a layer of meat sauce over the bottom of a baking dish.
+                            Then, layer a sheet of lasagne over the sauce, ensuring they overlap slightly when covering the sauce.
+                            Finally, cover the lasagna sheet with mozzarella and grated parmesan.
+                        </li>
+                        <li>Repeat the layering step until sufficiently filled, or once ingredients are used up. Top the final layer with more cheese.</li>
+                        <li>Cover the baking dish with aluminum foil and send that bad boy to the oven for 25 minutes.</li>
+                        <li>Remove the foil, then bake for another 25 minutes.</li>
+                        <li>Let the lasagna rest before cutting it.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-container">
+            <div class="container action-box">
+                <div>
+                    <p class="action-header">Check it out!</p>
+                    <p class="action-text">Want to find out more about The Odin Project? Click the button right over there!</p>
+                </div>
+                <p><a href="https://www.theodinproject.com" class="button-signup">Check it out!</a></p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container middle footer-text">
+                <p>Copyright &copy; skinnyfrit 2026</p>
+            </div>
+        </footer>
     </body>
 </html>

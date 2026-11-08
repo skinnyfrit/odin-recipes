@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Universal */
-p, ul.links {
+p, ul.links, .recipe-listing > li {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: #1F2937;
 }
@@ -45,10 +45,14 @@ ul.links {
 }
 
 li {
-    color: #F9FAF8;
     width:fit-content;
     white-space: nowrap;
     padding-left: 7%;
+}
+
+li > p > a {
+    text-decoration: none;
+    color: #F9FAF8;
 }
 
 /* Hero section 1 */
@@ -73,17 +77,30 @@ p.hero-subtext {
     margin: 5px;
 }
 
-img.long {
+.long {
     height: 250px;
-    width: auto;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #65a4e0;
 }
 
-button.signup {
+.long > p {
+    color: #F9FAF8;
+}
+
+a.button-signup {
+    text-decoration: none;
     background: #65a4e0;
     color: white;
     padding: 5px 20px;
     border-radius: 10px;
+    border-color: #65a4e0;
     margin: 5px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
 }
 
 /* Hero section 2 */
@@ -101,6 +118,7 @@ div.hero-2 {
 .fit {
     width: 100%;
     justify-content: center;
+    align-items: flex-start;    
 }
 
 .info-box {
@@ -110,21 +128,18 @@ div.hero-2 {
     padding: 0px 15px;
 }
 
+.info-box > .horizont {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+}
+
 p#info-heading {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
     text-align: center;
-}
-
-.info-links {
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: right;
-    align-items: center;
-    width: fit-content; */
+    margin: 20px 0px;
 }
 
 .square {
@@ -142,11 +157,14 @@ img.square {
     object-position: center;
 }
 
-p > a {
-    display: flex;
-    align-items: end;
+.horizont > p {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.horizont > p > a {
     text-decoration: none;
-    text-align: right;
+    margin: 10px 0px 0px 0px;
 }
 
 /* Quote section */
@@ -158,13 +176,14 @@ div.quote-container {
     padding: 90px 0px;
 }
 
-.quote {
+#quote-text {
     font-style: italic;
     font-size: 36px;
     font-weight: 300;
     text-align: center;
 }
-.source {
+
+#quote-source {
     text-align: right;
     font-weight: 300;
 }
@@ -194,6 +213,11 @@ div.quote-container {
     margin: 0;
 }
 
+.action-box > p > a.button-signup {
+    border-style: solid;
+    border-color: #F9FAF8;
+}
+
 /* Footer section */
 footer {
     display: flex;
@@ -202,9 +226,84 @@ footer {
 }
 
 .footer-text > p {
-    color: white
+    color: #E5E7EB
 }
 
 .middle {
     justify-content: center;
+}
+
+/* Recipes */
+div.return-home {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #1F2937;
+    padding: 0px;
+}
+
+div.recipe-top {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #1F2937;
+    padding-bottom: 50px;
+}
+
+div.recipe-how {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.vert {
+    display: flex;
+    flex-direction: column;
+}
+
+.return-home > .container > p > a {
+    text-decoration: none;
+    color: #adc8ff;
+    transition: all 0.3s ease;
+}
+
+.return-home > .container > p > a:hover {
+    color: #F9FAF8;
+}
+
+.hero-subtext.credits {
+    font-size: small;
+}
+
+.hero-subtext.credits > a {
+    text-decoration: none;
+    color: #adc8ff;
+}
+
+.desc > #info-heading {
+    text-align: left;
+    color: #E5E7EB;
+}
+
+.ing > #info-heading, .steps > #info-heading  {
+    text-align: left;
+}
+
+.recipe-listing > li {
+    padding: 5px 0px;
+    width: fit-content;
+    white-space: normal;
+}
+
+.recipe-top > .container.vert > .long {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+}
+
+img.long {
+    object-fit: cover;
+    object-position: center;
 }
