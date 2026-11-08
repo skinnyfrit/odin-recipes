@@ -27,7 +27,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: automated updates"
-          title: "Automated Content Updates"
+          title: "[Automated PR] Iteration ready for deployment"
           body: "This PR was automatically created by a GitHub Actions workflow."
           branch: "develop"         # The branch created for the PR
           base: "main"              # The branch you want to merge into
