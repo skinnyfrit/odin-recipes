@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Universal */
-p, ul.links {
+p, ul.links, .recipe-listing > li {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: #1F2937;
 }
@@ -226,9 +226,84 @@ footer {
 }
 
 .footer-text > p {
-    color: white
+    color: #E5E7EB
 }
 
 .middle {
     justify-content: center;
+}
+
+/* Recipes */
+div.return-home {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #1F2937;
+    padding: 0px;
+}
+
+div.recipe-top {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #1F2937;
+    padding-bottom: 50px;
+}
+
+div.recipe-how {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.vert {
+    display: flex;
+    flex-direction: column;
+}
+
+.return-home > .container > p > a {
+    text-decoration: none;
+    color: #adc8ff;
+    transition: all 0.3s ease;
+}
+
+.return-home > .container > p > a:hover {
+    color: #F9FAF8;
+}
+
+.hero-subtext.credits {
+    font-size: small;
+}
+
+.hero-subtext.credits > a {
+    text-decoration: none;
+    color: #adc8ff;
+}
+
+.desc > #info-heading {
+    text-align: left;
+    color: #E5E7EB;
+}
+
+.ing > #info-heading, .steps > #info-heading  {
+    text-align: left;
+}
+
+.recipe-listing > li {
+    padding: 5px 0px;
+    width: fit-content;
+    white-space: normal;
+}
+
+.recipe-top > .container.vert > .long {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+}
+
+img.long {
+    object-fit: cover;
+    object-position: center;
 }
