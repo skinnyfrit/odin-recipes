@@ -148,3 +148,63 @@ p > a {
     text-decoration: none;
     text-align: right;
 }
+
+/* Quote section */
+div.quote-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #E5E7EB;
+    padding: 90px 0px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+.source {
+    text-align: right;
+    font-weight: 300;
+}
+
+/* Call to action section */
+.action-container {
+    display:flex;
+    justify-content: center;
+    padding: 90px 0px;
+} 
+
+.action-box {
+    background: #65a4e0;
+    max-width: 50%;
+    border-radius: 7px;
+    padding: 20px 45px;
+}
+
+.action-header {
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.action-text {
+    color: #F9FAF8;
+    margin: 0;
+}
+
+/* Footer section */
+footer {
+    display: flex;
+    justify-content: center;
+    background: #1F2937;
+}
+
+.footer-text > p {
+    color: white
+}
+
+.middle {
+    justify-content: center;
+}

@@ -2,8 +2,8 @@ name: Trigger Pull Request
 
 on:
   push:
-    tags:
-    - 'iter**'
+    branches:
+      - main
 
 jobs:
   create-pull-request:
@@ -18,9 +18,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Make changes to files
-        run: |
-          echo "Automated change entry" >> updates.txt
+      # - name: Make changes to files
+      #   run: |
+      #     echo "Automated change entry" >> updates.txt
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
