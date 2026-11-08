@@ -169,6 +169,31 @@ div.quote-container {
     font-weight: 300;
 }
 
+/* Call to action section */
+.action-container {
+    display:flex;
+    justify-content: center;
+    padding: 90px 0px;
+} 
+
+.action-box {
+    background: #65a4e0;
+    max-width: 50%;
+    border-radius: 7px;
+    padding: 20px 45px;
+}
+
+.action-header {
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.action-text {
+    color: #F9FAF8;
+    margin: 0;
+}
+
 /* Footer section */
 footer {
     display: flex;
