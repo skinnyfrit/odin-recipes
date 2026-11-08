@@ -4,14 +4,68 @@
         <meta charset="UTF-8">
         <title>Recipe Collection</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
     </head>
-
     <body>
-        <h1>Odin Recipes!</h1>
-        <ul>
-            <li><a href="recipes/lasagna.html">Lasagna</a></li>
-            <li><a href="recipes/congee.html">Plain Congee</a></li>
-            <li><a href="recipes/tiramisu.html">Tiramisu</a></li>
-        </ul>
+        <header>
+            <div class="container">
+                <p id="logo">Header Logo</p>
+                <ul class="links">
+                    <li>header link one</li>
+                    <li>header link two</li>
+                    <li>header link three</li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="hero-1">
+            <div class="container">
+                <div>
+                    <p class="hero-main">Join my mailing list!!!</p>
+                    <p class="hero-subtext">This website has some subtext that goes here. Smaller font and lower contrast!</p>
+                    <button class="signup">Sign up</button>
+                </div>
+                <img class="long" src="resources/placeholder_long.jpg">
+            </div>
+        </div>
+
+        <div class="hero-2">
+            <div class="container horizont">
+                <p id="info-heading">Odin Recipes!</p>
+                <div class="container fit">
+                    <div class="info-box">
+                        <img class="square" src="resources/joe-boshra-lasagna.jpg">
+                        <p><a href="recipes/lasagna.html">Lasagna</a></p>
+                    </div>
+                    <div class="info-box">
+                        <img class="square" src="resources/erik-mclean-congee.jpg">
+                        <p><a href="recipes/congee.html">Plain Congee</a></p>
+                    </div>
+                    <div class="info-box">
+                        <img class="square" src="resources/jay-tiramisu.jpg">
+                        <p><a href="recipes/tiramisu.html">Tiramisu</a></p>
+                    </div>
+                    <div class="info-box">
+                        <img class="square" src="resources/placeholder_square.jpg">
+                        <p><a>Upcoming!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-container">
+            <i>meow meow meow meow</i>
+            <p>-Cat, Feline Companion</p>
+        </div>
+        
+        <div class="action-container">
+            <p>Call to action!</p>
+            <p>Sign up for my mailing list by clicking the button right over there!</p>
+            <button class="signup">Sign up</button>
+        </div>
+
+        <footer>
+            Copyright &copy; The Odin Project 2021
+        </footer>
     </body>
 </html>
