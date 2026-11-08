@@ -168,3 +168,18 @@ div.quote-container {
     text-align: right;
     font-weight: 300;
 }
+
+/* Footer section */
+footer {
+    display: flex;
+    justify-content: center;
+    background: #1F2937;
+}
+
+.footer-text > p {
+    color: white
+}
+
+.middle {
+    justify-content: center;
+}
