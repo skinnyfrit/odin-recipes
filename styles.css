@@ -90,12 +90,17 @@ p.hero-subtext {
     color: #F9FAF8;
 }
 
-button.signup {
+a.button-signup {
+    text-decoration: none;
     background: #65a4e0;
     color: white;
     padding: 5px 20px;
     border-radius: 10px;
+    border-color: #65a4e0;
     margin: 5px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
 }
 
 /* Hero section 2 */
@@ -171,13 +176,14 @@ div.quote-container {
     padding: 90px 0px;
 }
 
-.quote {
+#quote-text {
     font-style: italic;
     font-size: 36px;
     font-weight: 300;
     text-align: center;
 }
-.source {
+
+#quote-source {
     text-align: right;
     font-weight: 300;
 }
@@ -205,6 +211,11 @@ div.quote-container {
 .action-text {
     color: #F9FAF8;
     margin: 0;
+}
+
+.action-box > p > a.button-signup {
+    border-style: solid;
+    border-color: #F9FAF8;
 }
 
 /* Footer section */
