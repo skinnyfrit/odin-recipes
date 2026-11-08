@@ -27,7 +27,7 @@ header {
     justify-content: center;
 }
 
-#logo {
+p#logo {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: bolder;
@@ -87,7 +87,64 @@ button.signup {
 }
 
 /* Hero section 2 */
-img.square {
+div.hero-2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 90px 0px;
+}
+
+.horizont {
+    flex-direction: column;
+}
+
+.fit {
+    width: 100%;
+    justify-content: center;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 15px;
+}
+
+p#info-heading {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.info-links {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: right;
+    align-items: center;
+    width: fit-content; */
+}
+
+.square {
     height: 150px;
     width: 150px;
+    border-style: solid;
+    border-color: #65a4e0;
+    border-width: 3px;
+    border-radius: 15px;
+    /* margin: 20px; */
+}
+
+img.square {
+    object-fit: cover;
+    object-position: center;
+}
+
+p > a {
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    text-align: right;
 }
